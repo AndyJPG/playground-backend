@@ -1,6 +1,9 @@
 import express from 'express';
+import printMe from "./src/error";
 
 const app = express();
+
+printMe();
 
 app.get('/', (req, res) => {
     res.send({message: 'hello world'});
